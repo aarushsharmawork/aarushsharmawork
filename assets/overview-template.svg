@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 820" role="img" aria-label="Aarush Sharma developer profile overview with About Me, tech stack, GitHub stats, LeetCode stats and featured projects">
+<defs>
+  <linearGradient id="p" x2="1" y2="1"><stop stop-color="#263c5b"/><stop offset="1" stop-color="#315d74"/></linearGradient>
+  <linearGradient id="m" x2="1" y2="1"><stop stop-color="#342044"/><stop offset="1" stop-color="#623962"/></linearGradient>
+  <linearGradient id="z" x2="1" y2="1"><stop stop-color="#183b42"/><stop offset="1" stop-color="#24615d"/></linearGradient>
+  <style>
+    .heading{font:700 31px -apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;fill:#e6edf3;letter-spacing:-1px}.body{font:22px -apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;fill:#d8dee5}.label{font:19px -apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;fill:#aeb8c3}.small{font:16px -apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;fill:#8b949e}.cardtitle{font:650 23px -apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;fill:#e6edf3}.value{font:700 23px -apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;fill:#73d4f4}.chip{font:650 18px -apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;fill:#e6edf3}.project{font:700 16px -apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;fill:#e6edf3}.desc{font:15px -apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;fill:#aeb8c3}
+  </style>
+</defs>
+<rect width="1200" height="820" rx="12" fill="#0d1117"/>
+<text x="0" y="38" class="heading">About Me</text><line x1="0" y1="58" x2="730" y2="58" stroke="#30363d"/>
+<text x="0" y="98" class="body">I’m exploring software development, with a growing interest in</text>
+<text x="0" y="130" class="body">full stack work and other domains. I enjoy learning by building</text>
+<text x="0" y="162" class="body">and seeing how ideas turn into useful products.</text>
+<text x="0" y="226" class="heading">Tech Stack &amp; Tools</text>
+<rect x="0" y="248" width="139" height="52" rx="9" fill="#172535" stroke="#364457"/><text x="18" y="281" class="chip">⬢ Node.js</text>
+<rect x="151" y="248" width="166" height="52" rx="9" fill="#243421" stroke="#364457"/><text x="164" y="281" class="chip">◫ PostgreSQL</text>
+<rect x="329" y="248" width="131" height="52" rx="9" fill="#342b1b" stroke="#364457"/><text x="344" y="281" class="chip">Python</text>
+<rect x="472" y="248" width="109" height="52" rx="9" fill="#1a3243" stroke="#364457"/><text x="492" y="281" class="chip">HTML</text>
+<rect x="593" y="248" width="92" height="52" rx="9" fill="#253044" stroke="#364457"/><text x="615" y="281" class="chip">CSS</text>
+<text x="0" y="365" class="heading">My GitHub Stats</text>
+<rect x="0" y="385" width="347" height="335" rx="13" fill="#10161e" stroke="#30363d"/>
+<text x="23" y="437" class="cardtitle">GitHub activity</text>
+<text x="23" y="500" class="label">Public repositories</text><text id="github-repos" x="316" y="500" text-anchor="end" class="value">10</text>
+<text x="23" y="557" class="label">Followers</text><text id="github-followers" x="316" y="557" text-anchor="end" class="value">1</text>
+<text x="23" y="614" class="label">Public gists</text><text id="github-gists" x="316" y="614" text-anchor="end" class="value">0</text>
+<text x="23" y="689" class="small">Public profile snapshot</text>
+<rect x="362" y="385" width="368" height="335" rx="13" fill="#10161e" stroke="#30363d"/>
+<text x="385" y="437" class="cardtitle">Languages I’m using</text>
+<rect x="385" y="472" width="87" height="34" rx="17" fill="#1b2b3a"/><text x="398" y="495" class="small" fill="#d8dee5">Node.js</text>
+<rect x="480" y="472" width="117" height="34" rx="17" fill="#1b2b3a"/><text x="492" y="495" class="small" fill="#d8dee5">PostgreSQL</text>
+<rect x="605" y="472" width="79" height="34" rx="17" fill="#1b2b3a"/><text x="616" y="495" class="small" fill="#d8dee5">Python</text>
+<rect x="385" y="522" width="68" height="34" rx="17" fill="#1b2b3a"/><text x="397" y="545" class="small" fill="#d8dee5">HTML</text>
+<rect x="461" y="522" width="58" height="34" rx="17" fill="#1b2b3a"/><text x="475" y="545" class="small" fill="#d8dee5">CSS</text>
+<text x="385" y="650" class="small">A snapshot of the tools I’m learning</text><text x="385" y="677" class="small">and working with.</text>
+<text x="765" y="38" class="heading">LeetCode Stats</text>
+<rect x="765" y="58" width="435" height="275" rx="13" fill="#10161e" stroke="#30363d"/>
+<text x="792" y="105" class="cardtitle"><tspan fill="#ffa116">⌁</tspan>  LeetCode</text>
+<circle cx="850" cy="218" r="72" fill="none" stroke="#384048" stroke-width="10"/>
+<circle id="leetcode-easy-ring" cx="850" cy="218" r="72" fill="none" stroke="#3fb950" stroke-width="10" stroke-dasharray="402 452" transform="rotate(-90 850 218)"/>
+<circle id="leetcode-medium-ring" cx="850" cy="218" r="72" fill="none" stroke="#d29922" stroke-width="10" stroke-dasharray="50 452" stroke-dashoffset="-402" transform="rotate(-90 850 218)"/>
+<text id="leetcode-total" x="850" y="229" text-anchor="middle" font-size="48" font-weight="700" font-family="Arial,Helvetica,sans-serif" fill="#e6edf3">9</text>
+<text x="850" y="257" text-anchor="middle" class="small">solved</text>
+<text x="947" y="180" class="label">Easy</text><text id="leetcode-easy" x="1165" y="180" text-anchor="end" class="value" fill="#3fb950">8</text>
+<text x="947" y="232" class="label">Medium</text><text id="leetcode-medium" x="1165" y="232" text-anchor="end" class="value" fill="#d29922">1</text>
+<text x="947" y="284" class="label">Hard</text><text id="leetcode-hard" x="1165" y="284" text-anchor="end" class="value" fill="#f85149">0</text>
+<text x="765" y="390" class="heading">Featured Projects</text>
+<g>
+<rect x="765" y="410" width="133" height="310" rx="11" fill="#111820" stroke="#30363d"/><path d="M776 410h111a11 11 0 0 1 11 11v126H765V421a11 11 0 0 1 11-11" fill="url(#p)"/><text x="831" y="493" text-anchor="middle" font="700 42px Arial,sans-serif" fill="#c7ecfa">P.</text><text x="779" y="587" class="project">Priperi ↗</text><text x="779" y="622" class="desc">Android chat app</text><text x="779" y="652" class="desc">with encrypted</text><text x="779" y="682" class="desc">local storage.</text>
+<rect x="915" y="410" width="133" height="310" rx="11" fill="#111820" stroke="#30363d"/><path d="M926 410h111a11 11 0 0 1 11 11v126H915V421a11 11 0 0 1 11-11" fill="url(#m)"/><text x="981" y="493" text-anchor="middle" font="700 42px Arial,sans-serif" fill="#ffe1ef">M.</text><text x="929" y="579" class="project">Project</text><text x="929" y="603" class="project">Meow Cheats ↗</text><text x="929" y="642" class="desc">Browser side</text><text x="929" y="672" class="desc">panel and auto typer.</text>
+<rect x="1065" y="410" width="135" height="310" rx="11" fill="#111820" stroke="#30363d"/><path d="M1076 410h113a11 11 0 0 1 11 11v126h-135V421a11 11 0 0 1 11-11" fill="url(#z)"/><text x="1132" y="493" text-anchor="middle" font="700 42px Arial,sans-serif" fill="#c7fff0">Z.</text><text x="1079" y="587" class="project">ZapScan ↗</text><text x="1079" y="622" class="desc">Explore the</text><text x="1079" y="652" class="desc">repository on</text><text x="1079" y="682" class="desc">GitHub.</text>
+</g>
+<text id="snapshot-date" x="0" y="790" class="small">Stats snapshot · 30 Oct 2026</text>
+</svg>
