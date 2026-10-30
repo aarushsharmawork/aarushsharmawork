@@ -1,5 +1,4 @@
 <div align="center">
-  <img src="assets/banner.svg" alt="Hi, I'm Aarush" width="100%">
   <a href="https://aarushsharmawork.github.io/aarushsharmawork/"><img src="assets/portfolio-live-5c289a4a5fff.png" alt="About Aarush, tech stack, GitHub and LeetCode stats, and featured projects" width="100%"></a>
 </div>
 
