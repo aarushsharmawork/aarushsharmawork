@@ -49,7 +49,7 @@ def main() -> None:
                     "--disable-gpu",
                     "--hide-scrollbars",
                     "--force-device-scale-factor=2",
-                    "--window-size=1200,850",
+                    "--window-size=1050,850",
                     "--virtual-time-budget=5000",
                     f"--user-data-dir={profile}",
                     f"--screenshot={capture}",
