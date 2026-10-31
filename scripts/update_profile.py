@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import json
+import os
 import sys
 import time
 import urllib.request
@@ -26,6 +27,7 @@ def get_json(url: str, data: dict | None = None) -> dict:
         headers={
             "User-Agent": "aarush-profile-updater/1.0",
             "Accept": "application/json",
+            **({"Authorization": f"Bearer {os.environ['GITHUB_TOKEN']}"} if url.startswith("https://api.github.com/") and os.environ.get("GITHUB_TOKEN") else {}),
             **({"Content-Type": "application/json"} if body else {}),
         },
     )
@@ -43,14 +45,6 @@ def get_json(url: str, data: dict | None = None) -> dict:
 
 def leetcode_stats() -> dict[str, int]:
     try:
-        data = get_json(f"https://leetcode-api-faisalshohag.vercel.app/{LEETCODE_USER}")
-        values = {
-            "total": int(data["totalSolved"]),
-            "easy": int(data["easySolved"]),
-            "medium": int(data["mediumSolved"]),
-            "hard": int(data["hardSolved"]),
-        }
-    except (KeyError, TypeError, ValueError, RuntimeError):
         data = get_json(
             "https://leetcode.com/graphql/",
             {
@@ -62,14 +56,26 @@ def leetcode_stats() -> dict[str, int]:
         counts = {item["difficulty"].lower(): int(item["count"]) for item in rows}
         values = {key: counts[key] for key in ("easy", "medium", "hard")}
         values["total"] = counts["all"]
+    except (KeyError, TypeError, ValueError, RuntimeError):
+        data = get_json(f"https://leetcode-api-faisalshohag.vercel.app/{LEETCODE_USER}")
+        values = {
+            "total": int(data["totalSolved"]),
+            "easy": int(data["easySolved"]),
+            "medium": int(data["mediumSolved"]),
+            "hard": int(data["hardSolved"]),
+        }
     if min(values.values()) < 0 or sum(values[key] for key in ("easy", "medium", "hard")) != values["total"]:
         raise ValueError("LeetCode returned inconsistent solved counts")
     return values
 
 
 def main() -> None:
-    github = get_json(f"https://api.github.com/users/{GITHUB_USER}")
-    github_counts = {key: int(github[key]) for key in ("public_repos", "followers", "public_gists")}
+    try:
+        github = get_json(f"https://api.github.com/users/{GITHUB_USER}")
+        github_counts = {key: int(github[key]) for key in ("public_repos", "followers", "public_gists")}
+    except (KeyError, TypeError, ValueError, RuntimeError):
+        github_counts = json.loads(STATS_JSON.read_text())["github"]
+        print("GitHub API unavailable; retaining the last saved GitHub counts")
     leetcode = leetcode_stats()
 
     today = datetime.now(ZoneInfo("Asia/Kolkata")).strftime("%d %b %Y").lstrip("0")
